@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    padding: 20px 40px;
+
+    background-color: black;
+    text-align: center;
+}
+
+header>a {
+    color: white;
+    margin: auto;
+    text-decoration: underline;
+}
+
+/*  MAIN
+    Have 5 Groups
+    1.wecome section
+    2.places section
+    3.accomodation section
+    4.Unique Exp section
+    5.Be part of Commu section
+*/
+
+/* 1. Welcome section */
+/* In welcome section have 3 small sections
+    1. nav-bar
+    2. recommendation for plan
+    3. quote    
+*/
+
+/*  1.Nav-bar  */
+
+.welcome {
+    height: 725px;
+    padding: 0 80px;
+
+    background-image:
+        url(Resource/Background\ Image.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-group {
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.nav,
+.be_host {
+    flex: 1;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* left group */
+
+.logo {
+    align-self: center;
+
+}
+
+.logo>a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo>a>span {
+    margin-left: 10px;
+}
+
+/* middle group */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav>a {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.nav>a:hover {
+    border-bottom: 1px solid white;
+
+}
+
+
+.nav>a,
+.be_host>a {
+    width: auto;
+    height: auto;
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+}
+
+/* right group */
+
+.be_host {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.be_host>a:hover {
+    background-color: rgba(121, 163, 185, 0.5);
+    border-radius: 20px;
+}
+
+.be_host>button {
+    margin-left: 5px;
+    width: 77px;
+    height: 42px;
+    border-radius: 42px;
+    border: none;
+}
+
+/*  2. Recommendation for plan  */
+.recommend {
+    width: 850px;
+    height: 66px;
+    border-radius: 66px;
+    background-color: white;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recommend>div>a {
+    text-decoration: none;
+}
+
+.recommend>div>a>span {
+    color: black;
+}
+
+.input-customer-needed {
+    background-color: transparent;
+    border: none;
+}
+
+.search-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    margin-right: 10px;
+    background-color: #fa215b;
+    border: 2px solid #fa215b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn>a>svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+.BDR {
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.srt-clm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+
+.location {
+    flex: 2;
+}
+
+.recommend>div:hover {
+    background-color: #e7e7e7;
+    padding: 10px 0;
+    border-radius: 40px;
+    border: transparent;
+}
+
+/*  3. Quote */
+
+.quote {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote>span {
+    color: white;
+    font-weight: bold;
+    font-size: 58px;
+    margin: 0;
+}
+
+.quote>button {
+    width: 155px;
+    height: 32px;
+    margin-top: 15px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+/* 3.Places group */
+.places-group {
+    margin: 50px 0;
+    padding: 0 80px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.place {
+    width: 25%;
+    display: flex;
+    margin-top: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.place>img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.place-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*  4. Accomodations group */
+.accomodations-group,
+.unique_experience-group,
+.community-group {
+    margin-top: 50px;
+    padding: 0 80px;
+}
+
+.accomodations-type,
+.unique_experience-type,
+.community-type {
+
+    display: flex;
+}
+
+.accomodations {
+    width: 25%;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.accomodations:last-child,
+.unique_experience:last-child,
+.community:last-child {
+    margin-right: 0;
+}
+
+
+.accomodations>img,
+.unique_experience>img,
+.community>img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.unique_experience>img {
+    padding: 10px 0;
+}
+
+.accomodations>p,
+.unique_experience>p:nth-child(2),
+.community>p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*  5. Unique Experience */
+.unique_experience-group {
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.unique_experience>p,
+.unique_experience-group>h2,
+.unique_experience-group>span {
+    color: white;
+    margin: 0px;
+}
+
+.unique_experience,
+.community {
+    width: 33.33%;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.community-group {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 50px;
+}
+
+/* FOOTER */
+footer {
+    background: rgb(247, 247, 247);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer-group>div>a,
+.terms-group>div>div>a {
+    text-decoration: none;
+    color: black;
+    line-height: 25px;
+}
+
+.footer-group>div>a:not(:first-child):hover,
+.terms-group>div>div>a:hover {
+    text-decoration: underline;
+}
+
+.footer-group>div,
+.terms-group>div>div {
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer-group,
+.terms-group {
+    display: flex;
+    margin: 0 80px;
+    justify-content: space-between;
+}
+
+.terms-left,
+.language,
+.social_media {
+    width: 33.33%;
+}
+
+.language,
+.social_media {
+    justify-content: flex-end;
+}
+
+.footer-group {
+    border-bottom: 1px solid rgba(121, 163, 185, 0.5);
+    padding: 20px 0;
+}
+
+.footer-group>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-group>div>a:first-child {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.terms-group {
+    padding-top: 10px;
+}
+
+.language,
+.social_media {
+    display: flex;
+    align-items: center;
+
+}
+
+.language>a {
+    text-decoration: none;
+    color: black;
+    font-size: 14[x];
+}
+
+.terms-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social_media>a>img {
+    width: 16px;
+    height: 16px;
+}
